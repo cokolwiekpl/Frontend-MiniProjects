@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--headings-->
+<h1>Hello World - h1</h1>
+<h2>Hello World - h2</h2>
+<h3>Hello World - h3</h3>
+<h4>Hello World - h4</h4>
+<h5>Hello World - h5</h5>
+<h6>Hello World - h6</h6>
+
+<!-- smth-->
+<b>bold</b>
+<br>
+<i>italic</i>
+<br>
+<em>emphasized</em>
+<br>
+<strong>strong</strong>
+<br>
+<small>small</small>
+<br>
+<mark>marked</mark>
+<br>
+<del>deleted</del>
+<br>
+<ins>inserted</ins>
+<br>
+text<sub>subscript</sub><br>
+text<sup>superscript</sup>
+
+<br><br><br>
+<!--anchor tags-->
+<!--target - specify if link will open in new tab or smth like this ect-->
+<a href="https://www.google.com" target="_blank">Google</a>
+
+<br><br><br>
+<!--image tag-->
+<!--alt is use when for example internet conn is to slow to load image-->
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"> <br>
+<img src="404/404.png" alt="image error, because there is no path">
+
+<br><br><br>
+<!--paragraph tags-->
+<p><i>lorem impsum <b>1</b> -target - specify if link will open in new tab or smth like this ect</i></p>
+
+<p> lorem impsum <b>2</b> -target - specify if link will open in new tab or smth like this ect</p>
+
+
+<br><br><br>
+<!--tables-->
+<table>
+    <tr>
+        <th>lp</th>
+        <th>name</th>
+        <th>fam name</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Jan</td>
+        <td>Kowalski</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Janina</td>
+        <td>Kowalska</td>
+</table>
+
+<br><br><br>
+<!--lists-->
+<ul>
+    <li>Jan</li>
+    <li>Janina</li>
+    <li>Janusz</li>
+</ul>
+<ol>
+    <li>Jan</li>
+    <li>Janina</li>
+    <li>Janusz</li>
+</ol>
+
+<br><br><br>
+<!--video tag-->
+<video width="320" height="240" controls>
+    <source src="https://www.youtube.com/watch?v=a2-RtNChEIc"/>
+    Your browser does not support the video tag.
+
+</video>
+
+<br><br><br>
+<!--audio tag-->
+<audio controls>
+    <source src="https://www.youtube.com/watch?v=a2-RtNChEIc"/>
+    Your browser does not support the audio tag.
+</audio>
+
+<br><br><br>
+<!--form tag-->
+<br>
+<form action="https://www.google.com" method="get">
+    <input type="text" name="search" placeholder="Google search">
+    <input type="submit" value="search">
+</form>
+<!--text-->
+<br>
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" value="Jan"><br>
+
+    <label for="surname">Surname:</label><br>
+    <input type="text" id="surname" name="surname" value="Kowalski"><br>
+
+    <input type="submit" value="submit">
+</form>
+<br>
+<!--radio-->
+<form>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">female</label>
+
+    <input type="submit" value="submit">
+</form>
+
+<br>
+<!--checkbox-->
+<form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
+<br><br><br>
+<!--imputs-->
+<form>
+
+    <label for="username">Username:</label>
+    <input type="text" value="username" id="username"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password"><br>
+
+    Gender:
+    <input type="radio" id="maleIn" name="gender" value="male">
+    <label for="maleIn">male</label>
+
+    <input type="radio" id="femaleIn" name="gender" value="female">
+    <label for="femaleIn">female</label><br>
+
+    <label for="date"> date of birth:</label>
+    <input type="date" id="date"><br>
+
+    <label for="color"> Fav color:</label>
+    <input type="color" id="color"><br>
+
+    <label for="email"> email:</label>
+    <input type="email" id="email"><br>
+
+    <label for="range"> How happy you are:</label>
+    <input type="range" id="range"><br>
+
+    <label for="file"> CV:</label>
+    <input type="file" id="file"><br>
+
+    <label for="number"> Phone:</label>
+    <input type="number" id="number"><br>
+
+    <label for="clear">Clear form</label>
+    <input type="reset" id="clear"><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+
+<br><br><br>
+<form>
+    <label for="read-only">read only</label>
+    <input type="text" id="read-only" name="read-only" value="read-only" readonly> <br>
+
+    <label for="disabled">disabled</label>
+    <input type="text" id="disabled" name="disabled" value="disabled" disabled><br>
+
+    <label for="size">size</label>
+    <input type="text" id="size" name="size" size="5" maxlength="5" required><br>
+
+    <input type="submit" value="submit">
+</form>
+
+<br><br><br>
+<a href="secondSite.html" target="_blank">NEXT</a>
+<br><br><br>
+
+
+</body>
+</html>
