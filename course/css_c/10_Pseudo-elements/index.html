@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PseudoElements</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1:before {
+            content: "Hello";
+            color: red;
+            font-size: 20px;
+        }
+
+        h1::selection {
+            background-color: black;
+            color: white;
+        }
+
+        h1:after {
+            content: "World!";
+            color: blue;
+            font-size: 20px;
+        }
+        ::marker{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1> hello World!</h1>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+</body>
+</html>

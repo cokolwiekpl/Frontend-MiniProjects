@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PseudoClasses</title>
+    <style>
+        div ul li:first-child {
+            color: red;
+        }
+
+        div ul li:last-child {
+            color: red;
+        }
+
+        div ul li:nth-child(2n) {
+            color: white;
+            background-color: darkblue;
+        }
+
+        div:not(:empty) {
+            border: 5px solid black;
+        }
+
+        p:empty {
+            border: 5px solid red;
+        }
+
+        input:focus {
+            background-color: khaki;
+            color: black;
+        }
+
+        input[type="checkbox"]:checked {
+            box-shadow: 0 0 10px 10px red;
+        }
+
+        input:disabled {
+            background-color: lightgray;
+        }
+
+        input:required {
+            background-color: cadetblue;
+        }
+
+        input{
+            outline: none;
+        }
+
+        input:valid {
+            background-color: greenyellow;
+        }
+
+        input:invalid {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+    </ul>
+</div>
+<p></p>
+<br><br><br><br><br>
+<form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" > <br>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" disabled> <br>
+
+    <label for="famName">Family Name:</label>
+    <input type="text" id="famName" name="famName" required> <br>
+    OK?
+    <label for="checkbox">YES</label>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox1">NO</label>
+    <input type="checkbox" id="checkbox1">
+</form>
+</body>
+</html>
