@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            display: grid;
+            grid-template-row: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px;
+            grid-gap: 20px 20px;
+            /*margin-left: 200px;*/
+            /*justify-items: center;*/
+        }
+
+        .a {
+            background-color: red;
+            grid-row: 2/3;
+            grid-column: 2/3;
+
+        }
+
+        .b {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .c {
+            background-color: blue;
+
+        }
+
+        .d {
+            background-color: yellow;
+            align-self: center;
+            justify-self: end;
+
+        }
+
+        .e {
+            background-color: pink;
+            grid-row: 1/2;
+            grid-column: 1/2;
+
+        }
+
+        .f {
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .g {
+            background-color: purple;
+            align-self: start;
+            justify-self: center;
+
+
+        }
+
+        .h {
+            background-color: brown;
+
+        }
+
+        .i {
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="a">one</div>
+    <div class="b">two</div>
+    <div class="c">three</div>
+    <div class="d">four</div>
+    <div class="e">five</div>
+    <div class="f">six</div>
+    <div class="g">seven</div>
+    <div class="h">eight</div>
+    <div class="i">nine</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            width: 1000px;
+            flex-wrap: wrap;
+            height: 80vh;
+            justify-content: start;
+
+            background-color: cadetblue;
+        }
+
+        .a {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .b {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            align-self: center;
+            order: -1;
+
+        }
+
+        .c {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+
+        .d {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="a">one</div>
+    <div class="b">two</div>
+    <div class="c">three</div>
+    <div class="d">four</div>
+
+</div>
+</body>
+</html>
