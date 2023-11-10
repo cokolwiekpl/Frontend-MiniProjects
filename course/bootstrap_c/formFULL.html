@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet"
+          href=
+                  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        form i {
+            margin-left: -30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <form class="row g-3">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" placeholder="username">
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <label class="form-label">Password</label>
+            <div class="d-flex align-items-center">
+                <input type="password" name="password" id="password" placeholder="password" class="form-control">
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">Address email</label>
+            <input type="email" class="form-control" placeholder="email@example.com">
+        </div>
+        <div class="col-6">
+            <label class="form-label">Address 1 </label>
+            <input type="text" class="form-control" placeholder="1234 Main St">
+        </div>
+        <div class="col-6">
+            <label class="form-label">Address 2 (Optional)</label>
+            <input type="text" class="form-control" placeholder="apartment, studio, or floor">
+        </div>
+        <div class="col-md-5">
+            <label>City</label>
+            <input type="text" class="form-control" placeholder="city">
+        </div>
+        <div class="col-md-4">
+            <label>Region</label>
+            <input type="text" class="form-control" placeholder="region">
+        </div>
+        <div class="col-md-3">
+            <label>Postal Code</label>
+            <input type="text" class="form-control" placeholder="postal code">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="form-control"> Submit form</button>
+        </div>
+    </form>
+</div>
+<script>
+    const togglePassword = document
+        .querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+    togglePassword.addEventListener('click', () => {
+        const type = password
+            .getAttribute('type') === 'password' ?
+            'text' : 'password';
+        password.setAttribute('type', type);
+        togglePassword.classList.toggle('bi-eye');
+    });
+</script>
+
+</body>
+</html>
