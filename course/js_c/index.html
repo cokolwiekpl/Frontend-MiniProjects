@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1></h1>
+<script src="main.js"></script>
+<script>
+    document.querySelector('h1').textContent = 'Hello World!';
+    console.log('Hello World!');
+    document.write('Hello World!')
+
+    var a = "<h2>hello</h2>";
+    document.write(a);
+</script>
+
+
+<br><br>
+<script>
+    var x = 20;
+
+    function fun() {
+        document.write(x);
+    }
+
+    fun();
+</script>
+
+<br><br>
+<script>
+    console.time("TEST time")
+    var name = "nameXDXDXDX";
+    console.log(name);
+    console.log([1, 2, 3, 4, 5]);
+    console.error(name);
+    console.warn(name);
+    console.table([1, 2, 3, 4, 5]);
+    console.timeEnd("TEST time")
+</script>
+
+<br><br>
+<script>
+    var q = 200;
+    var w;
+    q === 200 ? (w = "YES") : (w = "NO");
+    document.write(w);
+</script>
+
+
+<br><br>
+<script>
+    var param = 1;
+
+    switch (param) {
+        case 1:
+            document.write("1");
+            break;
+
+        case 2:
+            document.write("2");
+            break;
+        case 3:
+            document.write("3");
+            break;
+        default:
+            document.write("default");
+            break;
+    }
+</script>
+
+
+<br><br>
+<script>
+    for (var i = 0; i < 10; i++) {
+        document.write("No: " + i + "<br>");
+    }
+
+</script>
+
+
+<br><br>
+<script>
+    function fun1() {
+        alert("ALERT");
+        confirm("CONFIRM");
+        var promptVAR = prompt("PROMPT");
+        document.write(promptVAR)
+    }
+</script>
+<button onclick="fun1()">FUN1</button>
+
+
+<br><br>
+<script>
+    var obj = {
+        name: "Stas",
+        age: 20,
+        movies: ["Endgame", "Infinity War", "Winter Soldier"]
+    };
+    console.log(obj);
+    document.write(obj.name + " " + obj.age + " " + obj.movies);
+
+</script>
+</body>
+</html>

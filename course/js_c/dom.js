@@ -1,0 +1,10 @@
+console.log(document.getElementById("header").innerText);
+console.log(document.getElementById("header").innerHTML);
+console.log(document.getElementById("footer").innerText);
+console.log(document.getElementById("sidebar").innerText);
+console.log(document.getElementById("sidebar").innerHTML);
+console.log(document.getElementById("header").getAttribute("class"));
+console.log(document.getElementById("header").getAttribute("class"));
+console.log(document.getElementById("header").getAttribute("style"));
+console.log(document.getElementById("header").getAttributeNode("style"));
+console.log(document.getElementById("header").attributes);
