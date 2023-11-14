@@ -1,14 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
+import Header from "./Header";
+import User from "./User";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
- <h1>Hello world</h1>
+const main = {
+    backgroundColor: "green",
+    height: "100px"
+}
 
+const fistvar = "Expert";
+const secondvar = "Developer";
+
+ReactDOM.render(
+    <>
+        <Header/>
+        <User name="John" expertise="front-end"/>
+        <User name="Stas" expertise="Back-end"/>
+        <User name="Tom" expertise="soft"/>
+        <User name="Ann" expertise="menago"/>
+
+        <div style={{backgroundColor: "black", height: "100px"}}>
+            <h5 style={{color: "red"}}>Hello world</h5>
+            <h5 style={main}>Hello there</h5>
+        </div>
+        <div>
+            <h5>Hello i am {fistvar}</h5>
+            <h5>Hello i am {secondvar}</h5>
+        </div>
+    </>
+    ,
+    document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-
