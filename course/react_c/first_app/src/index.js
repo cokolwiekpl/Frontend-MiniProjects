@@ -1,3 +1,18 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import Header from "./Header";
+import User from "./User";
+import App from "./App";
+import {BrowserRouter} from "react-router-dom";
+
+ReactDOM.render(
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>,
+    document.getElementById("root"));
+
+
+/*
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -14,7 +29,13 @@ const secondvar = "Developer";
 
 ReactDOM.render(
     <>
-        <Header/>
+
+
+
+
+
+
+         <Header/>
         <User name="John" expertise="front-end"/>
         <User name="Stas" expertise="Back-end"/>
         <User name="Tom" expertise="soft"/>
@@ -32,3 +53,4 @@ ReactDOM.render(
     ,
     document.getElementById('root')
 );
+*/
